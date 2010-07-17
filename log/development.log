@@ -1,0 +1,1330 @@
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2010-07-02 00:51:36) [GET]
+
+SyntaxError (/home/aditya/play/tweetapp/app/controllers/mess_controller.rb:51: syntax error, unexpected $end, expecting kEND):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.6ms)
+Rendered rescues/_request_and_response (63.8ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2010-07-02 00:51:48) [GET]
+
+SyntaxError (/home/aditya/play/tweetapp/app/controllers/mess_controller.rb:51: syntax error, unexpected $end, expecting kEND):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (45.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#auth (for 127.0.0.1 at 2010-07-02 00:52:09) [GET]
+
+SyntaxError (/home/aditya/play/tweetapp/app/controllers/mess_controller.rb:51: syntax error, unexpected $end, expecting kEND):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (43.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 00:52:50) [GET]
+
+NameError (undefined local variable or method `current_user' for #<MessController:0xb6d979dc>):
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (10.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mselect sqlite_version(*)[0m
+  [4;36;1mSQL (120.3ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_list("schema_migrations")[0m
+  [4;36;1mSQL (65.1ms)[0m   [0;1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100701194109)
+  [4;35;1mSQL (1.0ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "salt" varchar(255) NOT NULL, "password_hash" varchar(255) NOT NULL, "access_token" varchar(255), "access_secret" varchar(255), "admin" boolean NOT NULL, "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100701194109')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 01:20:18) [GET]
+
+ActionController::RoutingError (No route matches "/" with {:method=>:get}):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 01:21:19) [GET]
+
+NameError (uninitialized constant TwitterController):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (119.8ms)
+Rendered rescues/_request_and_response (3.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-02 01:21:22) [GET]
+
+NameError (uninitialized constant TwitterController):
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (40.1ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:22:32) [GET]
+
+NameError (undefined local variable or method `current_user' for #<MessController:0xb6ed153c>):
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.6ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:22:34) [GET]
+
+NameError (undefined local variable or method `current_user' for #<MessController:0xb6dbdc2c>):
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:22:36) [GET]
+
+NameError (undefined local variable or method `current_user' for #<MessController:0xb6fcef98>):
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (47.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:22:38) [GET]
+
+NameError (undefined local variable or method `current_user' for #<MessController:0xb6e64a2c>):
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (48.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 01:24:51) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.1ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 01:24:56) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.4ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:27:16) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (134.5ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 01:27:21) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 01:31:28) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#auth (for 127.0.0.1 at 2010-07-02 01:31:30) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (149.0ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:34) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (56.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:52) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (135.5ms)
+Rendered rescues/_request_and_response (2.1ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:54) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (52.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:54) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (50.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:55) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (146.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:31:57) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (51.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:33:14) [GET]
+
+NameError (uninitialized constant TwitterWrapper::Twitter):
+  lib/twitter_wrapper.rb:8:in `initialize'
+  app/controllers/mess_controller.rb:49:in `new'
+  app/controllers/mess_controller.rb:49:in `twitter_wrapper'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (49.7ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:33:51) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 5ms (DB: 0) | 302 Found [http://localhost/mess/]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:33:52) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `twitter_index_path' for #<ActionView::Base:0xb6b999dc>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', twitter_index_path%></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.5ms)
+Rendered rescues/_request_and_response (1.9ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:35:13) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess_index_path' for #<ActionView::Base:0xb6e1ce34>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess_index_path%></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (188.8ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:35:15) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess_index_path' for #<ActionView::Base:0xb6fd0014>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess_index_path%></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (61.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:36:30) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess_index_path' for #<ActionView::Base:0xb6c3e3ec>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess_index_path%></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:36:32) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess_index_path' for #<ActionView::Base:0xb6e8cedc>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess_index_path%></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (60.2ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:38:09) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess' for #<ActionView::Base:0xb6ad9434>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess %></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (66.0ms)
+Rendered rescues/_request_and_response (2.0ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:38:10) [GET]
+Rendering template within layouts/application
+Rendering users/login
+
+ActionView::TemplateError (undefined local variable or method `mess' for #<ActionView::Base:0xb6d7da50>) on line #36 of app/views/layouts/application.html.erb:
+33:       </div>      
+34:       <div id="main-navigation">
+35:         <ul class="wat-cf">
+36:         	<li><%=link_to 'Twitter', mess %></li>
+37: 			<li><%=link_to 'Users', users_path if current_user && current_user.admin?%></li>
+38: 			<li><%=link_to 'Register', new_user_path unless current_user%></li>
+39:         </ul>
+
+    app/views/layouts/application.html.erb:36
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (63.5ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:38:20) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 19ms (View: 15, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:38:25) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 11ms (View: 5, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:38:27) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6df5f28>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (166.6ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:40:59) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6db10d0>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (75.8ms)
+Rendered rescues/_request_and_response (6.7ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:41:01) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6f57948>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (80.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:41:02) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6c60a50>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (177.2ms)
+Rendered rescues/_request_and_response (0.5ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:41:02) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6e77bb8>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (74.0ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:41:02) [GET]
+Rendering template within layouts/application
+Rendering users/new
+
+ActionView::TemplateError (undefined method `password' for #<User:0xb6ba86e4>) on line #12 of app/views/users/new.html.haml:
+9:         
+10:         .group
+11:           = f.label :password, "Password", :class => :label
+12:           = f.password_field :password, :class => 'text_field'
+13:         
+14:         .group
+15:           = f.label :password_confirmation, "Password Confirmation", :class => :label
+
+    app/views/users/new.html.haml:12:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `call'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:225:in `form_for'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `call'
+    haml (3.0.11) lib/haml/helpers.rb:588:in `haml_bind_proc'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:231:in `form_for'
+    app/views/users/new.html.haml:5:in `_run_haml_app47views47users47new46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (82.9ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-02 01:42:05) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 12ms (View: 8, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing UsersController#new (for 127.0.0.1 at 2010-07-02 01:42:10) [GET]
+Rendering template within layouts/application
+Rendering users/new
+Completed in 61ms (View: 10, DB: 0) | 200 OK [http://localhost/users/new]
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-07-02 01:42:21) [POST]
+  Parameters: {"authenticity_token"=>"InjNZV2WS0HxZrWhSLicWNZsB8I16UnjNnzZdHURp6Q=", "user"=>{"password_confirmation"=>"akkuakku", "password"=>"akkuakku", "email"=>"adityadixit06@gmail.com"}}
+  [4;36;1mUser Load (11.4ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'adityadixit06@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.0ms)[0m   [0mSQLite3::SQLException: users.admin may not be NULL: INSERT INTO "users" ("salt", "created_at", "access_secret", "updated_at", "admin", "password_hash", "email", "access_token") VALUES('441ab1286dac8fcf63f557c74ae340be5587afee', '2010-07-01 20:12:21', NULL, '2010-07-01 20:12:21', NULL, '219ba2d8226b48dd49cb615ba7eed7065224a1e0', 'adityadixit06@gmail.com', NULL)[0m
+
+ActiveRecord::StatementInvalid (SQLite3::SQLException: users.admin may not be NULL: INSERT INTO "users" ("salt", "created_at", "access_secret", "updated_at", "admin", "password_hash", "email", "access_token") VALUES('441ab1286dac8fcf63f557c74ae340be5587afee', '2010-07-01 20:12:21', NULL, '2010-07-01 20:12:21', NULL, '219ba2d8226b48dd49cb615ba7eed7065224a1e0', 'adityadixit06@gmail.com', NULL)):
+  app/controllers/users_controller.rb:18:in `create'
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (69.9ms)
+Rendered rescues/_request_and_response (0.6ms)
+Rendering rescues/layout (internal_server_error)
+  [4;36;1mSQL (0.8ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100701194109)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mDROP TABLE "users"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mDELETE FROM schema_migrations WHERE version = '20100701194109'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateUsers (20100701194109)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mselect sqlite_version(*)[0m
+  [4;35;1mSQL (0.8ms)[0m   [0mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255) NOT NULL, "salt" varchar(255) NOT NULL, "password_hash" varchar(255) NOT NULL, "access_token" varchar(255), "access_secret" varchar(255), "admin" boolean DEFAULT 'f', "created_at" datetime, "updated_at" datetime) [0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.4ms)[0m   [0mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mINSERT INTO schema_migrations (version) VALUES ('20100701194109')[0m
+  [4;35;1mSQL (0.6ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.4ms)[0m   [0m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mPRAGMA index_list("users")[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mPRAGMA index_info('index_users_on_email')[0m
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-07-02 01:44:27) [POST]
+  Parameters: {"authenticity_token"=>"InjNZV2WS0HxZrWhSLicWNZsB8I16UnjNnzZdHURp6Q=", "user"=>{"password_confirmation"=>"akkuakku", "password"=>"akkuakku", "email"=>"adityadixit06@gmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'adityadixit06@gmail.com') LIMIT 1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO "users" ("salt", "created_at", "access_secret", "updated_at", "admin", "password_hash", "email", "access_token") VALUES('449be9bc37424ede4693d2b61a9e3e95f091baa3', '2010-07-01 20:14:27', NULL, '2010-07-01 20:14:27', 'f', '511a3127a2edcace17fa106e006181a0e89be912', 'adityadixit06@gmail.com', NULL)[0m
+
+NameError (undefined local variable or method `twitter_index_path' for #<UsersController:0xb6a36ec8>):
+  app/controllers/users_controller.rb:21:in `create'
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (53.0ms)
+Rendered rescues/_request_and_response (3.2ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing UsersController#create (for 127.0.0.1 at 2010-07-02 01:45:50) [POST]
+  Parameters: {"authenticity_token"=>"InjNZV2WS0HxZrWhSLicWNZsB8I16UnjNnzZdHURp6Q=", "user"=>{"password_confirmation"=>"akkuakku", "password"=>"akkuakku", "email"=>"adityadixit06@gmail.com"}}
+  [4;36;1mUser Load (0.3ms)[0m   [0;1mSELECT "users".id FROM "users" WHERE ("users"."email" = 'adityadixit06@gmail.com') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering users/new
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Completed in 67ms (View: 39, DB: 1) | 200 OK [http://localhost/users]
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:46:02) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering mess/index
+
+ActionView::TemplateError (undefined local variable or method `signin_twitter_path' for #<ActionView::Base:0xb6c3885c>) on line #27 of app/views/mess/index.html.haml:
+24:       - else
+25:         %p
+26:           The application needs your permission to access your Twitter account. Please click the button below. If you've already signed in with Twitter, then refresh the page because Twitter might be unstable (so the application can't connect with it).
+27:         =link_to image_tag("http://apiwiki.twitter.com/f/1242697715/Sign-in-with-Twitter-darker.png"), signin_twitter_path
+28:           
+
+    app/views/mess/index.html.haml:27:in `_run_haml_app47views47mess47index46html46haml'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/haml/helpers/action_view_mods.rb:13:in `render'
+    haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+    /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+    /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+    /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+    /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+    /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendered rescues/_trace (64.3ms)
+Rendered rescues/_request_and_response (0.4ms)
+Rendering rescues/layout (internal_server_error)
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-02 01:47:24) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Rendering template within layouts/application
+Rendering mess/index
+Completed in 749ms (View: 22, DB: 0) | 200 OK [http://localhost/]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:28) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=gJCbZ4YhNB18XHTfUGpkU26wOWL1hQoWDO0OaDSmo
+Completed in 740ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:29) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=2la4f3vmEDovjQyERumanMhn7L1a1PkYFmmTing
+Completed in 803ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:29) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=R9iz6VuEroEVxNmaqIbfS5yTGHNxmdmw6dLC8fDn4bc
+Completed in 859ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:30) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=YQ6VguvGEIAERVVL2gyKe6AHW8GWnl9qmLozkJ64tIE
+Completed in 1143ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:32) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=lg8FrDOQQSRBj86LeebJtDmqDXJQw3p9pXIVPWJDM
+Completed in 733ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:32) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=sjlpQZXyrXq9NrgwFGw96gqgrbmb2yC8R0mOAW3ogQ
+Completed in 829ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:33) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=XZX08Qv16xG1Nxrwb010dJZmZ4PR1Lla6PlXYeyGdA
+Completed in 875ms (DB: 1) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:40) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=RXCCxksmiKangarvWWlqFHb0TiVC7AhBaIWBNOSU
+Completed in 897ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:47:58) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=O4E4HBo9HKH5t0HTUEYft5ywJB1PIdN0ap4B7cLfE
+Completed in 774ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:48:01) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=i3HYSlLt6Np3la8iYLtomE9YBbybyWSs0N46TtJsRM
+Completed in 823ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:48:02) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=zIr8b2icQ84T8LyD5YEY3K6I94WJAZnJaVtjYptAe8
+Completed in 1266ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:48:05) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=sjdMSCXHqPKsmkVpMDZ8CDdJyRBlla0g7JPsx9LA8
+Completed in 1036ms (DB: 0) | 302 Found [http://localhost/mess/signin]
+
+
+Processing MessController#signin (for 127.0.0.1 at 2010-07-02 01:48:07) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+Redirected to http://localhost:3000api.twitter.com/oauth/authorize?oauth_token=33KyYp6Qm85GKAaSgWfFMQyzBxOqwtqanhaWsb6HU
+Completed in 765ms (DB: 1) | 302 Found [http://localhost/mess/signin]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-06 02:08:49) [GET]
+
+ActionController::RoutingError (No route matches "/stores" with {:method=>:get}):
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-06 02:08:49) [GET]
+
+ActionController::RoutingError (No route matches "/stores" with {:method=>:get}):
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-06 02:08:50) [GET]
+
+ActionController::RoutingError (No route matches "/stores" with {:method=>:get}):
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)
+
+
+Processing UsersController#index (for 127.0.0.1 at 2010-07-06 02:08:53) [GET]
+Redirected to http://localhost:3000/mess
+Completed in 61ms (DB: 0) | 302 Found [http://localhost/users]
+
+
+Processing MessController#index (for 127.0.0.1 at 2010-07-06 02:08:53) [GET]
+Redirected to http://localhost:3000/users/login
+Filter chain halted as [:login_required] rendered_or_redirected.
+Completed in 18ms (DB: 0) | 302 Found [http://localhost/mess]
+
+
+Processing UsersController#login (for 127.0.0.1 at 2010-07-06 02:08:54) [GET]
+Rendering template within layouts/application
+Rendering users/login
+Completed in 52ms (View: 48, DB: 0) | 200 OK [http://localhost/users/login]
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-07-06 02:12:22) [GET]
+
+ActionController::RoutingError (No route matches "/houses" with {:method=>:get}):
+  haml (3.0.11) rails/./lib/sass/plugin/rack.rb:41:in `call'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:104:in `service'
+  /usr/lib/ruby/1.8/webrick/httpserver.rb:65:in `run'
+  /usr/lib/ruby/1.8/webrick/server.rb:173:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:162:in `start_thread'
+  /usr/lib/ruby/1.8/webrick/server.rb:95:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `each'
+  /usr/lib/ruby/1.8/webrick/server.rb:92:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:23:in `start'
+  /usr/lib/ruby/1.8/webrick/server.rb:82:in `start'
+
+Rendering rescues/layout (not_found)

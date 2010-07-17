@@ -1,0 +1,3 @@
+consumer_key:  
+consumer_secret: Z6DdSQl3QagVmmWh8IhKnCtGwSzgwoF3cQj2dsoj4 
+callback_url: http://dev.twipler.com:3000/mess/auth 
